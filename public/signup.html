@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="font-inter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edushooter Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body class="h-screen">
+    <div class="flex flex-col justify-center items-center h-full overflow-x-hidden">
+      <div class="bg-yellow-200 px-14 py-12 rounded-lg shadow-lg">
+        <img class="mx-auto max-w-20 mb-3" src="../src/img/logo.Png" alt="logo img">
+        <h2 class="text-xl text-center text-black font-bold mb-5 mt-5">Make Your Account First</h2>
+
+        <div class="mt-2 sm:mx-auto sm:w-full sm:max-w-sm">
+          <form id="signupForm" class="space-y-5">
+            <div>
+              <label for="displayName" class="block text-sm font-medium leading-6 text-gray-900">Display Name</label>
+              <div class="mt-1">
+                <input id="displayName" name="displayName" type="text" required class="block w-full rounded-md border-0 pl-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+              <div class="mt-1">
+                <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 pl-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+
+            <div>
+              <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+              <div class="mt-1">
+                <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 pl-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+
+            <div>
+              <label for="passwordConfirm" class="block text-sm font-medium leading-6 text-gray-900">Confirm Password</label>
+              <div class="mt-1">
+                <input id="passwordConfirm" name="passwordConfirm" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 pl-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+
+            <div>
+              <button type="submit" class="flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors duration-300">Sign up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../public/js/script.js"></script>
+  </body>
+</html>
