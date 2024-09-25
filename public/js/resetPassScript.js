@@ -20,7 +20,22 @@ document.getElementById("resetPasswordForm").addEventListener("submit", async fu
 
     // Memproses respons API
     if (response.status === 200) {
-      swal("Success", "Silahkan cek email anda.", "success");
+      const data = await response.json();
+
+      // Menampilkan link reset password yang bisa diklik
+      swal({
+        title: "Success",
+        text: `Silahkan klik link berikut untuk reset password anda:`,
+        content: {
+          element: "a",
+          attributes: {
+            href: data.link,
+            innerText: "Reset Password Link",
+            target: "_blank",
+          },
+        },
+        icon: "success",
+      });
     } else {
       swal("Error", "Terjadi kesalahan. Coba lagi nanti.", "error");
     }
