@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="font-inter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edugym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-yellow-200 shadow">
+      <!-- Logo and Navbar Text Links -->
+      <div class="flex items-center space-x-10">
+        <img src="../src/img/logo.Png" alt="Edushooter Logo" class="w-10 h-auto" />
+        <a href="edushooterHome.html" class="text-lg font-bold text-gray-800 hover:text-blue-600">Edushooter</a>
+        <a href="edugymHome.html" class="text-lg font-bold text-gray-800 hover:text-blue-600">EduGym</a>
+      </div>
+
+      <!-- Sign Up Button -->
+      <a href="signup.html">
+        <button class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 font-semibold">Sign Up</button>
+      </a>
+    </nav>
+
+    <!-- Content of the page goes here -->
+    <section class="flex flex-col md:flex-row items-center justify-between px-60 py-12 bg-blue-200">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Edugym</h1>
+        <p class="text-gray-600 leading-relaxed max-w-[70ch] text-xl">
+          Edugym adalah aplikasi mengasah otak (brain training) yang terdiri dari sekumpulan minigame dengan tema berbeda-beda, seperti: pelatihan matematis, bahasa inggris, dan ilmu pengetahuan alam.
+        </p>
+      </div>
+
+      <div class="md:w-1/2 mt-8 md:mt-0 md:ml-14 flex justify-center">
+        <img src="../src/img/edugym_1.jpeg" alt="Portrait" class="rounded-lg h-96 object-cover" />
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row items-center justify-between px-60 py-12 bg-white">
+      <div class="md:w-1/2 mt-8 md:mt-0 md:mr-14 flex justify-center">
+        <img src="../src/img/edugym_2.jpeg" alt="Portrait" class="rounded-lg h-96 object-cover" />
+      </div>
+
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Core Gameplay</h1>
+        <p class="text-gray-600 leading-relaxed max-w-[70ch] text-xl">
+          Awalnya, pemain memilih tema/kategori pelatihan yang akan diikuti. Aplikasi kemudian menunjukkan demonstrasi cara bermain dan menampilkan panduan sederhana bagi pengguna.
+        </p>
+      </div>
+    </section>
+
+    <!-- New Section for Gameplay Loop -->
+    <section class="px-60 py-12 bg-blue-200">
+      <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Gameplay Loop</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h2 class="text-xl font-bold mb-2">Memilih Jenis Training</h2>
+          <p class="text-gray-600 leading-relaxed">Pemain memilih salah satu minigame dari tema yang tersedia.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h2 class="text-xl font-bold mb-2">Menyelesaikan Training</h2>
+          <p class="text-gray-600 leading-relaxed">Pemain mencoba menyelesaikan training dalam kurun waktu terbatas.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h2 class="text-xl font-bold mb-2">Penilaian dan Rewards</h2>
+          <p class="text-gray-600 leading-relaxed">Berdasarkan hasil training (fail, success, perfect), permainan memberi sejumlah Gems.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h2 class="text-xl font-bold mb-2">Pemakaian Rewards</h2>
+          <p class="text-gray-600 leading-relaxed">Pemain dapat memakai Gems yang didapatkan pada aplikasi Edushooter.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-60 py-12 bg-white">
+      <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Screenshots</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <!-- Screenshot 1 -->
+        <div class="flex justify-center">
+          <img src="../src/img/edugym_1.jpeg" alt="Screenshot 1" class="rounded-lg object-cover h-80" />
+        </div>
+
+        <!-- Screenshot 2 -->
+        <div class="flex justify-center">
+          <img src="../src/img/edugym_2.jpeg" alt="Screenshot 2" class="rounded-lg object-cover h-80" />
+        </div>
+
+        <!-- Screenshot 3 -->
+        <div class="flex justify-center">
+          <img src="../src/img/edugym_3.jpeg" alt="Screenshot 3" class="rounded-lg object-cover h-80" />
+        </div>
+
+        <!-- Screenshot 4 -->
+        <div class="flex justify-center">
+          <img src="../src/img/edugym_4.jpeg" alt="Screenshot 4" class="rounded-lg object-cover h-80" />
+        </div>
+
+        <!-- Screenshot 5 -->
+        <div class="flex justify-center">
+          <img src="../src/img/edugym_5.jpeg" alt="Screenshot 5" class="rounded-lg object-cover h-80" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="flex justify-between items-center px-60">
+        <p class="text-sm">© 2024 Geometrisatu. All rights reserved.</p>
+        <p class="text-sm">Contact us: <a href="mailto:info@geometrisatu.com" class="underline">hi.geometrisatu@gmail.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
