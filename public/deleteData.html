@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="font-inter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edushooter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <style>
+      /* Hide scrollbar for horizontal scrolling */
+      .scroll-container::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+      .scroll-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-yellow-200 shadow">
+      <!-- Logo and Navbar Text Links -->
+      <div class="flex items-center space-x-10">
+        <img src="../src/img/logo.Png" alt="Edushooter Logo" class="w-10 h-auto" />
+        <a href="edushooterHome.html" class="text-lg font-bold text-gray-800 hover:text-blue-600">Edushooter</a>
+        <a href="edugymHome.html" class="text-lg font-bold text-gray-800 hover:text-blue-600">EduGym</a>
+      </div>
+
+      <!-- Sign Up Button -->
+      <a href="signup.html">
+        <button class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 font-semibold">Sign Up</button>
+      </a>
+    </nav>
+
+    <!-- Content of the page goes here -->
+    <div class="flex justify-center items-center min-h-screen bg-gray-100 px-4 pt-10 pb-10">
+      <div class="bg-white p-8 rounded-2xl shadow-lg max-w-xl w-full text-gray-800">
+        <h2 class="text-2xl font-bold mb-4 text-center">Request Data Deletion</h2>
+        <p class="mb-4 text-center text-sm text-gray-600">
+          If you wish to delete your personal data from our system, please complete the form below. 
+          This process is irreversible, and all associated data will be permanently removed.
+        </p>
+    
+        <form action="submitDeletionRequest.php" method="POST" class="space-y-4">
+          <label class="block">
+            <span class="text-gray-700">Email Address</span>
+            <input type="email" name="email" class="w-full p-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your email" required>
+          </label>
+    
+          <label class="block">
+            <span class="text-gray-700">Game Username</span>
+            <input type="text" name="username" class="w-full p-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your in-game username" required>
+          </label>
+
+          <label class="block">
+            <span class="text-gray-700">Password</span>
+            <input type="password" name="password" class="w-full p-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your password" required>
+          </label>
+    
+          <label class="block">
+            <span class="text-gray-700">Reason for Deletion (Optional)</span>
+            <textarea name="reason" class="w-full p-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="3" placeholder="Tell us why you want to delete your data (optional)"></textarea>
+          </label>
+    
+          <label class="flex items-center">
+            <input type="checkbox" name="confirmation" class="mr-2" required>
+            <span class="text-gray-700 text-sm">I understand that this action is irreversible and will permanently delete my data.</span>
+          </label>
+    
+          <button type="submit" class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">
+            Submit Request
+          </button>
+        </form>
+    
+        <p class="text-xs text-gray-600 mt-4 text-center">
+          If you have any issues, contact us at 
+          <a href="mailto:hi.geometrisatu@gmail.com" class="text-blue-600 underline">hi.geometrisatu@gmail.com</a>.
+        </p>
+      </div>
+    </div>
+    
+    
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="flex justify-between items-center px-60">s
+        <p class="text-sm">© 2024 Geometrisatu. All rights reserved.</p>
+        <div class="text-sm space-x-4">
+          <a href="./privacyPolicy.html" class="underline">Privacy Policy</a>
+          <!--<a href="./eula.html" class="underline">End User License Agreement (EULA)</a>-->
+          <a href="./deleteData.html" class="underline">Request Data Deletion</a>
+        </div>
+        <p class="text-sm">Contact us: <a href="mailto:info@geometrisatu.com" class="underline">hi.geometrisatu@gmail.com</a></p>
+      </div>
+    </footer>
+
+
+    <script src="../public/js/carouselScrolling.js"></script>
+    <script src="../public/js/deleteData.js"></script>
+  </body>
+</html>

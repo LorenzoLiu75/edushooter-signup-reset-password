@@ -10,7 +10,8 @@ app.use(express.static('.'));
 
 // Serve signup.html for the root route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'signup.html'));
+  //res.sendFile(path.join(__dirname, 'public', 'edushooterHome.html'));
+  res.redirect("/edushooterHome.html");
 });
 
 app.listen(process.env.PORT || port, () => {
