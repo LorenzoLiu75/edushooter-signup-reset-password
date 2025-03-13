@@ -1,9 +1,20 @@
 runtime: nodejs20
 
 handlers:
-  - url: /(.*)
-    static_files: public/\1
-    upload: public/(.*)
-
   - url: /
+    static_files: public/edurobotsHome.html
+    upload: public/edurobotsHome.html
+    secure: always
+
+  - url: /(.*\.(html|css|js|ico))
+    static_files: public/\1
+    upload: public/.*\.(html|css|js|ico)
+    secure: always
+
+  - url: /img
+    static_dir: src/img
+    secure: always
+
+  - url: /.*
     script: auto
+    secure: always
